@@ -71,3 +71,7 @@ yarn-error.log
 
 # Node related
 .node_modules
+
+# Prettier files
+.prettierignore
+.prettierrc
