@@ -17,17 +17,18 @@ const IndexPage = () => (
           <div className="w-auto">
             <p className="text-base text-5xl font-bold"> Learning </p>
             <p className="text-base text-5xl font-bold"> starts here. </p>
-            <p className="text-xl">
+            <p className="mb-2 text-xl">
               A free computer science education for any and all marginalized
               students - <span className="font-bold">
                 that's our promise.
               </span>
             </p>
-            <Register/>
-           
           
+            
+          <span > <Register/></span>
           </div>
           
+           
         </div>
       </div>
       <div className="w-3/6"></div>

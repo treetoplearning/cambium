@@ -6,6 +6,9 @@ module.exports = {
       },
       fontFamily: {
         base: ['Roboto'],
+      },
+      maxWidth: {
+        xxs: '9rem'
       }
     }
   },

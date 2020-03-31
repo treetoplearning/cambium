@@ -21,7 +21,7 @@ const Navbar = () => (
           Contact
         </a>
       </li>
-      <Register />
+      <Register/>
     </ul>
   </div>
 );
