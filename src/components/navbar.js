@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-
+import Register from "../components/register";
 import logo from "../images/logo.svg"
 
 
@@ -9,7 +9,6 @@ import "../css/global.css";
 const Navbar = () => (
   <div className="flex items-center justify-between w-full h-20 font-mono">
     <div className="w-12 ml-8">
-       
         <img className="mb-0" src={logo} />
     </div>
     <ul class="flex items-center">
@@ -23,11 +22,7 @@ const Navbar = () => (
           Contact
         </a>
       </li>
-      <li class="mr-10 px-8 mb-0 py-1 rounded-full bg-base hover:text-green-700">
-        <a class="text-white" href="#">
-          Register
-        </a>
-      </li>
+      <Register/>
     </ul>
   </div>
 );
