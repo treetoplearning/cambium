@@ -5,18 +5,18 @@ import "../css/global.css";
 
 const Register = () => (
   
-      <li class="mr-10 px-8 mb-0 py-1 rounded-full bg-base hover:text-green-700">
-        <a class="text-white" href="#">
+      <div class="mr-10 px-8 mb-0 py-1 rounded-full bg-base hover:text-green-700">
+        <a class="text-white" href="#hello">
           Register
         </a>
-      </li>
+      </div>
 );
 
-Navbar.propTypes = {
+Register.propTypes = {
   siteTitle: PropTypes.string
 };
 
-Navbar.defaultProps = {
+Register.defaultProps = {
   siteTitle: ``
 };
 
