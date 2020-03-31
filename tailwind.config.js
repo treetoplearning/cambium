@@ -8,7 +8,7 @@ module.exports = {
         base: ['Roboto'],
       },
       maxWidth: {
-        xxs: '9rem'
+        xxs: '11.5rem'
       }
     }
   },
