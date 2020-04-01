@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
 import Register from "../components/register";
+
 import logo from "../images/logo.svg";
+
 
 import "../css/global.css";
 
