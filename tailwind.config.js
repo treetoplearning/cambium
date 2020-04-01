@@ -9,6 +9,9 @@ module.exports = {
       },
       maxWidth: {
         xxs: '11.5rem'
+      },
+      width: {
+        128: '21rem'
       }
     }
   },

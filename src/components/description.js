@@ -5,12 +5,12 @@ import "../css/global.css";
 
 
 const Description = ({title, body}) => (
-  <div class="flex w-64 text-white font-mono">
+  <div class="flex w-128 text-white font-mono">
     <div className="flex-row w-full">
-        <p className="text-3xl underline">
+        <p className="ml-6 text-3xl font-medium underline">
             {title}
         </p>
-        <p className="text-md ">
+        <p className="text-lg text-center ">
             {body}
         </p>
     </div>

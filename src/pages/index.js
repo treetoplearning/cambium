@@ -1,11 +1,12 @@
 import React from "react";
 import Register from "../components/register";
 import Navbar from "../components/navbar";
-import Holder from "../components/holder";
-import Description from "../components/description";
+import LandingCard from "../components/landingcard";
+import ReverseLandingCard from "../components/reverselandingcard"
 
 import wave from "../images/wave.svg";
 import professor from "../images/professor.svg";
+import connection from "../images/connection.svg";
 import background from "../images/background.svg";
 import "../css/global.css";
 
@@ -42,28 +43,19 @@ const IndexPage = () => (
       className="flex flex-col w-full h-auto bg-base"
       style={backgroundColor}
     >
-      <div className="flex w-full mt-16">
-        <div className="flex justify-center w-1/2">
-          <Description
-            title="Creativity"
-            body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing - all absolutely free. "
-          />
-        </div>
-        <div className="flex justify-center w-1/2">
-          <Holder src={professor} />
-        </div>
+      <div className="mt-16">
+        <LandingCard
+          title="Creativity"
+          body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing - all absolutely free."
+          src={professor} 
+        />
       </div>
-      <div className="flex w-full mt-16">
-        
-        <div className="flex justify-center w-1/2">
-          <Holder src={professor} />
-        </div>
-        <div className="flex justify-center w-1/2">
-          <Description
-            title="100% Free"
-            body="Treetop seeks to educate beyond financial barriers, and support non-traditional students in computer science. Treetop’s remote lessons will give your student the tools they need to succeed in industry or on any path of their choosing. Find out more here."
-          />
-        </div>
+       <div className="mt-16">
+        <ReverseLandingCard
+          title="Support"
+          body="Treetop seeks to educate beyond financial barriers, and support non-traditional students in computer science. Treetop’s remote lessons will give your student the tools they need to succeed in industry or on any path of their choosing. Find out more here."
+          src={connection} 
+        />
       </div>
     </div>
   </div>
