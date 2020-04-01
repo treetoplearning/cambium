@@ -29,11 +29,11 @@ const Navbar = () => (
 );
 
 Navbar.propTypes = {
-  siteTitle: PropTypes.string
+  
 };
 
 Navbar.defaultProps = {
-  siteTitle: ``
+ 
 };
 
 export default Navbar;
