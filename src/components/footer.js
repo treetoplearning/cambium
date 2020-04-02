@@ -45,7 +45,7 @@ const Footer = () => (
               </a>
             </p>
           </div>
-          <div className="flex w-1/6"></div>
+         
           
           <div className="flex justify-center w-1/2">
             <div className="flex justify-center w-64 h-48 bg-white rounded-lg">
@@ -57,27 +57,31 @@ const Footer = () => (
           <hr className="mt-12" />
         </div>
         <div className="flex flex-row w-full mt-8">
-          <div className="w-1/6 mt-4"></div>
+          
 
-          <div className="flex justify-center w-4/6">
-            <div className="flex justify-between w-3/4">
-         
-
-         
-
+          <div className="flex w-full">
+            <div className="flex w-3/4">
+            <div className="flex justify-between w-full mr-32">
+            <p> Sponsor </p>
+            <p> Sponsor </p>
+            <p> Sponsor </p>
+          
+            <p> Sponsor </p>
+                </div>
            
             </div>
             <div className="flex w-1/4">
-            <div className="flex justify-between w-full">
+            <div className="flex justify-around w-full">
               <FontAwesomeIcon icon={["fal", "facebook"]} size="lg" />
               <FontAwesomeIcon icon={["fas", "twitter"]} size="lg" />
               <FontAwesomeIcon icon={["far", "facebook"]} size="lg" />
             </div>
             </div>
           </div>
-          <div className="w-1/6"></div>
+     
         </div>
       </div>
+      
       <div className="flex w-1/6"></div>
     </div>
   </div>
