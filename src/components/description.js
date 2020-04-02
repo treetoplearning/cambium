@@ -23,7 +23,8 @@ Description.propTypes = {
 };
 
 Description.defaultProps = {
-  
+  title: '',
+  body: ''
 };
 
 export default Description;

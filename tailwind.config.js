@@ -2,7 +2,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        base: '#38A169'
+        base: '#38A169',
+        bark: '#855D51'
       },
       fontFamily: {
         base: ['Roboto'],

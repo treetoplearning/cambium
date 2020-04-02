@@ -3,6 +3,7 @@ import Register from "../components/register";
 import Navbar from "../components/navbar";
 import LandingCard from "../components/landingcard";
 import ReverseLandingCard from "../components/reverselandingcard"
+import Footer from "../components/footer"
 
 import wave from "../images/wave.svg";
 import professor from "../images/professor.svg";
@@ -10,11 +11,13 @@ import connection from "../images/connection.svg";
 import background from "../images/background.svg";
 import "../css/global.css";
 
-const backgroundColor = {
+const bodyColor = {
   background: "rgb(82,140,109)",
   background:
     "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
 };
+
+
 
 const IndexPage = () => (
   <div className="flex flex-col">
@@ -41,7 +44,7 @@ const IndexPage = () => (
 
     <div
       className="flex flex-col w-full h-auto bg-base"
-      style={backgroundColor}
+      style={bodyColor}
     >
       <div className="mt-16">
         <LandingCard
@@ -50,7 +53,7 @@ const IndexPage = () => (
           src={professor} 
         />
       </div>
-       <div className="mt-16">
+       <div className="mt-16 mb-16">
         <ReverseLandingCard
           title="Support"
           body="Treetop seeks to educate beyond financial barriers, and support non-traditional students in computer science. Treetop’s remote lessons will give your student the tools they need to succeed in industry or on any path of their choosing. Find out more here."
@@ -58,6 +61,7 @@ const IndexPage = () => (
         />
       </div>
     </div>
+    <Footer/>
   </div>
 );
 
