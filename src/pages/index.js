@@ -5,7 +5,6 @@ import LandingCard from "../components/landingcard";
 import Footer from "../components/footer";
 
 import wave from "../images/wave.svg";
-import professor from "../images/professor.svg";
 import connection from "../images/connection.svg";
 import "../css/global.css";
 
@@ -54,7 +53,7 @@ const IndexPage = () => (
           <LandingCard
             title="Creativity"
             body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing - all absolutely free."
-            src={professor}
+            src={creativity}
           />
         </div>
         <div className="w-1/6"> </div>
