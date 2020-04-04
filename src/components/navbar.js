@@ -1,5 +1,5 @@
 import React from "react";
-import Register from "../components/register";
+import RegisterButton from "./registerbutton";
 
 import logo from "../images/logo.svg";
 
@@ -7,13 +7,13 @@ import "../css/global.css";
 
 const Navbar = () => (
   <div className="flex items-center justify-between w-full h-20 font-mono">
-  
+    
     <div className="flex w-12 ml-8">
       <a href="/">
         <img className="mb-0" src={logo} />
       </a>
     </div>
-  
+
     <ul class="flex items-center">
       <li class="mr-8 mb-0">
         <a class="text-base hover:text-green-700" href="about">
@@ -25,7 +25,7 @@ const Navbar = () => (
           Contact
         </a>
       </li>
-      <Register siteURL="register" />
+      <RegisterButton siteURL="register" />
     </ul>
   </div>
 );

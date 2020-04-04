@@ -3,22 +3,22 @@ import React from "react";
 
 import "../css/global.css";
 
-const Register = ({ text, siteURL }) => (
+const RegisterButton = ({ text, siteURL }) => (
   <a class="text-white" href={siteURL}>
     <div class="mr-10 px-8 mb-0 py-1 rounded-full bg-base">{text}</div>
   </a>
 );
 
-Register.propTypes = {
+RegisterButton.propTypes = {
   siteTitle: PropTypes.string,
   text: PropTypes.string,
   siteURL: PropTypes.string,
 };
 
-Register.defaultProps = {
+RegisterButton.defaultProps = {
   siteTitle: ``,
   text: `Register`,
   siteURL: `#registerpage`,
 };
 
-export default Register;
+export default RegisterButton;

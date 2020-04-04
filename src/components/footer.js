@@ -16,9 +16,15 @@ import {
 
 library.add(faTwitter, faFacebook, faGithub);
 
+const footerColor = {
+  background: "rgb(133,93,81)",
+  background:
+    "linear-gradient(180deg, rgba(133,93,81,1) 0%, rgba(164,129,119,1) 100%, rgba(168,134,124,1) 100%)"
+};
+
 const Footer = () => (
   <div className="">
-    <div className="flex flex-row h-auto pt-10 pb-10 font-mono bg-bark">
+    <div className="flex flex-row h-auto pt-10 pb-10 font-mono bg-bark" style={footerColor}>
       <div className="flex w-1/6"></div>
       <div className="flex flex-col w-4/6 font-hairline text-white">
         <div className="flex flex-row">
@@ -32,8 +38,8 @@ const Footer = () => (
               Treetop Learning is not a registered 501(c)(3) nonprofit
               organization.
               <a className="ml-1 underline" href="#donatepage">
-                Donate today.{" "}
-              </a>
+              Donate today
+              </a>.
             </p>
           </div>
 

@@ -1,23 +1,18 @@
 import React from "react";
-import Register from "../components/register";
+import RegisterButton from "../components/registerbutton";
 import Navbar from "../components/navbar";
 import LandingCard from "../components/landingcard";
 import Footer from "../components/footer";
 
 import wave from "../images/wave.svg";
 import connection from "../images/connection.svg";
+import creativity from "../images/creativity.svg";
 import "../css/global.css";
 
 const bodyColor = {
   background: "rgb(82,140,109)",
   background:
     "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
-};
-
-const footerColor = {
-  background: "rgb(133,93,81)",
-  background:
-    "linear-gradient(180deg, rgba(133,93,81,1) 0%, rgba(164,129,119,1) 100%, rgba(168,134,124,1) 100%)"
 };
 
 const IndexPage = () => (
@@ -35,12 +30,12 @@ const IndexPage = () => (
           students - <span className="font-bold">that's our promise.</span>
         </p>
         <div className="flex">
-          <Register text="Register Today" siteURL="#registerpage" />
+          <RegisterButton text="Register Today" siteURL="register" />
         </div>
       </div>
     </div>
     <div className="overflow-hidden">
-      <img className="w-full mt-2 transform scale-105" src={wave} />
+      <img className="w-full mt-2 transform scale-105" src={wave} alt="" />
     </div>
 
     <div
