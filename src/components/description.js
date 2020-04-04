@@ -3,17 +3,10 @@ import React from "react";
 
 import "../css/global.css";
 
-
-const Description = ({title, body}) => (
-  <div class="flex w-128 text-white font-mono">
-    <div className="flex-row w-full">
-        <p className="ml-6 text-3xl font-medium underline">
-            {title}
-        </p>
-        <p className="text-lg text-center ">
-            {body}
-        </p>
-    </div>
+const Description = ({ title, body }) => (
+  <div class="flex flex-col text-white font-mono">
+    <p className="ml-6 text-3xl font-medium underline">{title}</p>
+    <p className="text-lg text-center ">{body}</p>
   </div>
 );
 
@@ -23,8 +16,8 @@ Description.propTypes = {
 };
 
 Description.defaultProps = {
-  title: '',
-  body: ''
+  title: "",
+  body: ""
 };
 
 export default Description;

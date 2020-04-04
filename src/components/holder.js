@@ -5,9 +5,9 @@ import "../css/global.css";
 
 
 const Holder = ({src}) => (
-  <div class="flex bg-white w-128 h-64 rounded-lg">
-    <div className="flex justify-center p-6">
-        <img src={src}/>
+  <div className="">
+    <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg">
+        <img src={src} className=""/>
     </div>
   </div>
 );

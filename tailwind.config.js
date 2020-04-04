@@ -12,7 +12,7 @@ module.exports = {
         xxs: '11.5rem'
       },
       width: {
-        128: '21rem'
+        128: '26rem'
       }
     }
   },
