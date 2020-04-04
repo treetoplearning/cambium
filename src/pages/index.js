@@ -63,8 +63,8 @@ const IndexPage = () => (
       <div className="flex flex-row">
         <div className="w-1/6"> </div>
         <div className="w-4/6 mt-4">
-          <LandingCard
-            title="Support"
+          <LandingCard 
+            title="Support" direction="-reverse"
             body="Treetop seeks to educate beyond financial barriers, and support non-traditional students in computer science. Treetop’s remote lessons will give your student the tools they need to succeed in industry or on any path of their choosing."
             src={connection}
           />

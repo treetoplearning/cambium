@@ -6,16 +6,19 @@ import React from "react";
 
 import "../css/global.css";
 
-const LandingCard = ({ title, body, src }) => (
-  <div className="flex justify-between w-full">
-    <div className="flex items-center w-1/2 p-4">
+
+const LandingCard = ({ title, body, src, direction }) => (
+  
+  <div className="flex justify-between w-full" >
+    <div className="flex items-center w-1/2 p-6">
       <Description title={title} body={body} />
     </div>
-    <div className="flex items-center w-1/2 p-8">
+    <div className="flex items-center w-1/2 p-6">
       <Holder src={src} />
     </div>
   </div>
 );
+
 
 LandingCard.propTypes = {
   title: PropTypes.string,

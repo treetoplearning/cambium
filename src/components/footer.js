@@ -17,11 +17,11 @@ library.add(faTwitter, faFacebook, faGithubAlt);
 
 const Footer = () => (
   <div className="">
-    <div className="flex flex-row h-auto font-mono bg-bark">
+    <div className="flex flex-row h-auto pt-10 pb-10 font-mono bg-bark">
       <div className="flex w-1/6"></div>
       <div className="flex flex-col w-4/6 font-hairline text-white">
         <div className="flex flex-row">
-          <div className="flex flex-col w-1/2 mt-4">
+          <div className="flex flex-col w-1/2">
             <p>
               A free computer science education for any and all marginalized
               students -{" "}
@@ -37,12 +37,12 @@ const Footer = () => (
           </div>
 
           <div className="flex flex-col justify-center w-1/2 ">
-            <div className="flex justify-center w-64 h-48 bg-white rounded-lg">
+            <div className="flex self-center justify-center w-64 h-48 bg-white rounded-lg">
               <img src={logo} />
             </div>
           </div>
         </div>
-        <hr className="mt-12" />
+        <hr className="mt-10" />
         <div className="flex flex-row justify-between mt-8">
           <div className="flex">
             <p className="mr-8"> Sponsor </p>
