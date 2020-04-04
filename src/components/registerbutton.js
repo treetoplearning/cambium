@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import { Link } from "gatsby";
 import "../css/global.css";
 
-const RegisterButton = ({ text, siteURL }) => (
-  <a class="text-white" href={siteURL}>
-    <div class="mr-10 px-8 mb-0 py-1 rounded-full bg-base">{text}</div>
-  </a>
+const RegisterButton = ({ text }) => (
+  <Link to="register">
+    <p class="mr-10 px-8 mb-0 py-1 rounded-full text-white bg-base">{text}</p>
+  </Link>
 );
 
 RegisterButton.propTypes = {

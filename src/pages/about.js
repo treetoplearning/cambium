@@ -17,7 +17,7 @@ const bodyColor = {
 const AboutPage = () => (
   <div className="flex flex-col">
     <Navbar />
-    <div className="flex w-full">
+    <div className="flex justify-center w-full">
       <img src={computer} alt="hello" />
     </div>
 

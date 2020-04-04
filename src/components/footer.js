@@ -38,8 +38,8 @@ const Footer = () => (
               Treetop Learning is not a registered 501(c)(3) nonprofit
               organization.
               <a className="ml-1 underline" href="#donatepage">
-              Donate today
-              </a>.
+              Donate today.s{" "}
+              </a>
             </p>
           </div>
 

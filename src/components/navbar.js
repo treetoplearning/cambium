@@ -2,12 +2,12 @@ import React from "react";
 import RegisterButton from "./registerbutton";
 
 import logo from "../images/logo.svg";
+import { Link } from "gatsby";
 
 import "../css/global.css";
 
 const Navbar = () => (
   <div className="flex items-center justify-between w-full h-20 font-mono">
-    
     <div className="flex w-12 ml-8">
       <a href="/">
         <img className="mb-0" src={logo} />
@@ -16,16 +16,18 @@ const Navbar = () => (
 
     <ul class="flex items-center">
       <li class="mr-8 mb-0">
-        <a class="text-base hover:text-green-700" href="about">
-          About
-        </a>
+        <Link to="about">
+          <p className="text-base hover:text-green-700">About </p>
+        </Link>
       </li>
       <li class="mr-8 mb-0">
-        <a class="text-base hover:text-green-700" href="about#contact">
-          Contact
-        </a>
+        <Link to="about">
+          <p className="text-base hover:text-green-700" to="contact">
+            Contact{" "}
+          </p>
+        </Link>
       </li>
-      <RegisterButton siteURL="register" />
+      <RegisterButton />
     </ul>
   </div>
 );
