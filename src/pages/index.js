@@ -7,7 +7,6 @@ import Footer from "../components/footer";
 import wave from "../images/wave.svg";
 import professor from "../images/professor.svg";
 import connection from "../images/connection.svg";
-import background from "../images/background.svg";
 import "../css/global.css";
 
 const bodyColor = {

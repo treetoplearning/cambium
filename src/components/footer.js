@@ -52,13 +52,13 @@ const Footer = () => (
             <p className="mr-8"> Sponsor </p>
           </div>
           <div className="flex">
-            <a className="ml-8">
+            <a className="ml-8" href="https://twitter.com">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a className="ml-8">
+            <a className="ml-8" href="https://facebook.com">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a className="ml-8">
+            <a className="ml-8" href="https://github.com">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>

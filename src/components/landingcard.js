@@ -8,11 +8,11 @@ import "../css/global.css";
 
 const LandingCard = ({ title, body, src, reversed }) => (
   
-  <div className={'flex justify-between w-full ' + (reversed ? 'flex-row-reverse' : '')}>
+  <div className={'flex justify-between w-full ' + (reversed ? 'flex-row-reverse' : 'flex-row')}>
     <div className="flex items-center w-1/2 p-6">
       <Description title={title} body={body} />
     </div>
-    <div className="flex items-center w-1/2 p-6">
+    <div className="flex items-center w-1/2 p-12">
       <Holder src={src} />
     </div>
   </div>
