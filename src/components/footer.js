@@ -10,10 +10,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faFacebook,
-  faGithubAlt
+  faGithubAlt,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faTwitter, faFacebook, faGithubAlt);
+library.add(faTwitter, faFacebook, faGithub);
 
 const Footer = () => (
   <div className="">
@@ -58,7 +59,7 @@ const Footer = () => (
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a className="ml-8">
-              <FontAwesomeIcon icon={faGithubAlt} />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
         </div>

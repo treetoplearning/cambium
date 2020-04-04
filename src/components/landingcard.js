@@ -6,10 +6,9 @@ import React from "react";
 
 import "../css/global.css";
 
-
-const LandingCard = ({ title, body, src, direction }) => (
+const LandingCard = ({ title, body, src, reversed }) => (
   
-  <div className="flex justify-between w-full" >
+  <div className={'flex justify-between w-full ' + (reversed ? 'flex-row-reverse' : '')}>
     <div className="flex items-center w-1/2 p-6">
       <Description title={title} body={body} />
     </div>
@@ -23,7 +22,8 @@ const LandingCard = ({ title, body, src, direction }) => (
 LandingCard.propTypes = {
   title: PropTypes.string,
   body: PropTypes.string,
-  src: PropTypes.string
+  src: PropTypes.string,
+  reversed: PropTypes.bool
 };
 
 LandingCard.defaultProps = {};
