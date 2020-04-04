@@ -23,9 +23,9 @@ const footerColor = {
 const AboutPage = () => (
   <div className="flex flex-col">
     <Navbar />
-    <div className="flex w-full mb-64">
+    <div className="flex w-full">
       
-      
+      <img src={computer}/>
     </div>
     
     <div
@@ -55,7 +55,7 @@ const AboutPage = () => (
         <div className="w-1/6"> </div>
       </div>
     </div>
-    <div >
+    <div id="contact">
       <Footer />
     </div>
   </div>
