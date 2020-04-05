@@ -3,16 +3,16 @@ import Navbar from "../components/navbar";
 import LandingCard from "../components/landingcard";
 import Footer from "../components/footer";
 
-import computer from "../images/computer.svg";
-import teamwork from "../images/teamwork.svg";
-import availability from "../images/availability.svg";
+import computer from "../static/computer.svg";
+import teamwork from "../static/teamwork.svg";
+import availability from "../static/availability.svg";
 import "../css/global.css";
 
 const bodyColor = {
-  background: "rgb(82,140,109)",
   background:
     "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)",
 };
+
 
 const AboutPage = () => (
   <div className="flex flex-col">

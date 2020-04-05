@@ -4,13 +4,12 @@ import Navbar from "../components/navbar";
 import LandingCard from "../components/landingcard";
 import Footer from "../components/footer";
 
-import wave from "../images/wave.svg";
-import connection from "../images/connection.svg";
-import creativity from "../images/creativity.svg";
+import wave from "../static/wave.svg";
+import connection from "../static/connection.svg";
+import creativity from "../static/creativity.svg";
 import "../css/global.css";
 
 const bodyColor = {
-  background: "rgb(82,140,109)",
   background:
     "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
 };
@@ -23,7 +22,7 @@ const IndexPage = () => (
       <div className="flex-col w-2/6 mt-10 font-mono">
         <p className="text-base text-5xl font-bold leading-tight">Learning</p>
         <p className="mb-1 text-base text-5xl font-bold leading-tight">
-          starts here.
+          starts with Treetop.
         </p>
         <p className="mb-2 text-xl">
           A free computer science education for any and all marginalized

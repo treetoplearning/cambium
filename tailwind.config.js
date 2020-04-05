@@ -13,6 +13,9 @@ module.exports = {
       },
       width: {
         128: '26rem'
+      },
+      borderRadius: {
+        xlg: '1rem'
       }
     }
   },
