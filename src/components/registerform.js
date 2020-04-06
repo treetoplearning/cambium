@@ -5,14 +5,14 @@ import "../css/global.css";
 
 const RegisterForm = () => (
   <div className="flex items-center justify-center min-h-screen px-4 font-mono bg-gray-50 sm:px-6 lg:px-8">
-    <div className="w-full max-w-xl py-8 bg-white rounded-lg px-36">
+    <div className="w-full max-w-xl px-4 py-8 bg-white rounded-lg md:px-36">
       <div>
         <h2 className="mt-6 text-lg font-extrabold leading-9 text-center text-gray-900 md:text-3xl">
           Register to access Treetop
         </h2>
       </div>
       <form
-        className="justify-between py-4 mx-12 mt -8"
+        className="justify-between py-4 md:mx-12 mt -8"
         action="#"
         method="POST"
       >
@@ -82,8 +82,8 @@ const RegisterForm = () => (
           </div>
         </div>
 
-        <div className="flex items-center justify-between mt-6">
-          <div className="flex items-center">
+        <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
+          <div className="flex items-center justify-start">
             <input
               id="remember_me"
               type="checkbox"
@@ -97,7 +97,7 @@ const RegisterForm = () => (
             </label>
           </div>
 
-          <div className="text-sm leading-5">
+          <div className="mt-4 text-sm leading-5 md:mt-0">
             <Link
               to="forgotpassword"
               className="font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500 focus:outline-none focus:underline"
