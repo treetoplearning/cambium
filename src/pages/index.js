@@ -11,20 +11,18 @@ import "../css/global.css";
 
 const bodyColor = {
   background:
-    "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
+    "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)",
 };
 
 const IndexPage = () => (
   <div className="flex flex-col">
     <Navbar />
     <div className="flex w-full">
-      <div className="w-1/6 "></div>
-      <div className="flex-col w-2/6 mt-10 font-mono">
-        <p className="text-base text-5xl font-bold leading-tight">Learning</p>
-        <p className="mb-1 text-base text-5xl font-bold leading-tight">
-          starts with Treetop.
-        </p>
-        <p className="mb-2 text-xl">
+      <div className="w-1/6 hidden sm:flex"></div>
+      <div className="flex-col w-100 p-8 sm:p-0 sm:w-3/6 md:mt-12 font-mono">
+        <p className="text-base text-2xl md:text-5xl font-bold leading-tight">Learning starts</p>
+        <p className="mb-1 text-base text-2xl md:text-5xl font-bold leading-tight">with Treetop.</p>
+        <p className="mb-2 text-md pr-16">
           A free computer science education for any and all marginalized
           students - <span className="font-bold">that's our promise.</span>
         </p>
@@ -42,29 +40,30 @@ const IndexPage = () => (
       style={bodyColor}
     >
       <div className="flex flex-row">
-        <div className="w-1/6"> </div>
-        <div className="w-4/6 mt-16">
+        <div className="hidden sm:flex w-1/6"> </div>
+        <div className="w-100 sm:w-4/6 mt-16">
           <LandingCard
             title="Creativity"
             body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing - all absolutely free."
             src={creativity}
           />
         </div>
-        <div className="w-1/6"> </div>
+        <div className="hidden sm:flex w-1/6"> </div>
       </div>
       <div className="flex flex-row">
-        <div className="w-1/6"> </div>
-        <div className="w-4/6 mt-4">
-          <LandingCard 
-            title="Support" reversed="true"
+        <div className="hidden sm:flex w-1/6"> </div>
+        <div className="w-100 sm:w-4/6 mt-4">
+          <LandingCard
+            title="Support"
+            reversed="true"
             body="Treetop seeks to educate beyond financial barriers, and support non-traditional students in computer science. Treetop’s remote lessons will give your student the tools they need to succeed in industry or on any path of their choosing."
             src={connection}
           />
         </div>
-        <div className="w-1/6"> </div>
+        <div className="hidden sm:flex w-1/6"> </div>
       </div>
     </div>
-    <div >
+    <div>
       <Footer />
     </div>
   </div>

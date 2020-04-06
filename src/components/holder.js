@@ -6,7 +6,7 @@ import "../css/global.css";
 
 const Holder = ({src}) => (
   <div className="">
-    <div className="flex flex-col items-center justify-center p-6 bg-white rounded-xlg">
+    <div className="flex flex-col items-center justify-center p-6 bg-white rounded-xl">
         <img src={src} alt="src"/>
     </div>
   </div>

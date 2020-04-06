@@ -42,7 +42,7 @@ const Footer = () => (
           </div>
 
           <div className="flex flex-col justify-center w-1/2 ">
-            <div className="flex self-center justify-center w-64 h-48 bg-white rounded-xlg">
+            <div className="flex self-center justify-center w-64 h-48 bg-white rounded-xl">
               <img src={logo} alt="logo"/>
             </div>
           </div>
