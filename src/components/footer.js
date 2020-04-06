@@ -42,8 +42,10 @@ const Footer = () => (
             </a>
           </p>
         </div>
-        <div className="flex flex-col self-center justify-center w-64 h-48 bg-white md:w-1/3 rounded-xl">
+        <div className="flex items-center justify-center md:w-1/2"> 
+        <div className="flex flex-col self-center justify-center w-64 h-48 bg-white md:w-3/5 rounded-xl">
           <img src={logo} alt="logo" />
+        </div>
         </div>
       </div>
       <hr className="mt-10" />

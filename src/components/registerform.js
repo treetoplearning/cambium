@@ -7,7 +7,7 @@ const RegisterForm = () => (
   <div className="flex items-center justify-center min-h-screen px-4 font-mono bg-gray-50 sm:px-6 lg:px-8">
     <div className="w-full max-w-xl py-8 bg-white rounded-lg px-36">
       <div>
-        <h2 className="mt-6 text-3xl font-extrabold leading-9 text-center text-gray-900">
+        <h2 className="mt-6 text-lg font-extrabold leading-9 text-center text-gray-900 md:text-3xl">
           Register to access Treetop
         </h2>
       </div>
