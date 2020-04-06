@@ -10,10 +10,10 @@ module.exports = {
     "gatsby-plugin-postcss",
     `gatsby-plugin-netlify-cms`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
+        path: `${__dirname}/blog`,
+        names: 'blog',
       },
     },
     `gatsby-transformer-remark`,

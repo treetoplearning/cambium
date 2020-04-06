@@ -26,8 +26,8 @@ const AboutPage = () => (
       style={bodyColor}
     >
       <div className="flex flex-row">
-      <div className="hidden md:flex w-1/6"> </div>
-        <div className="w-full md:w-4/6 mt-16">
+      <div className="hidden w-1/6 md:flex"> </div>
+        <div className="w-full mt-16 md:w-4/6">
           <LandingCard
             title="Mentorship"
             reversed="True"
@@ -35,18 +35,18 @@ const AboutPage = () => (
             src={teamwork}
           />
         </div>
-        <div className="hidden md:flex w-1/6"> </div>
+        <div className="hidden w-1/6 md:flex"> </div>
       </div>
       <div className="flex flex-row">
-      <div className="hidden md:flex w-1/6"> </div>
-        <div className="w-full md:w-4/6 mt-4">
+      <div className="hidden w-1/6 md:flex"> </div>
+        <div className="w-full mt-4 md:w-4/6">
           <LandingCard
             title="Availability"
             body="With the help of remote video software, your instructor will work around your student’s busy schedule to find a lesson time that works for everyone. When not in lesson, your student will equipped with the resources to continue their learning and explore their own projects."
             src={availability}
           />
         </div>
-        <div className="hidden md:flex w-1/6"> </div>
+        <div className="hidden w-1/6 md:flex"> </div>
       </div>
     </div>
     <div id="contact">
