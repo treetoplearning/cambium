@@ -3,21 +3,16 @@ import React from "react";
 
 import "../css/global.css";
 
-
-const Holder = ({src}) => (
-  <div className="">
-    <div className="flex flex-col items-center justify-center p-6 bg-white rounded-xl">
-        <img src={src} alt="src"/>
-    </div>
+const Holder = ({ src }) => (
+  <div className="flex flex-col items-center justify-center p-8 bg-white rounded-xl shadow-lg w-full h-128">
+    <img src={src} alt="src" />
   </div>
 );
 
 Holder.propTypes = {
-  source: PropTypes.string
+  source: PropTypes.string,
 };
 
-Holder.defaultProps = {
-  
-};
+Holder.defaultProps = {};
 
 export default Holder;
