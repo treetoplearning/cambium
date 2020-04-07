@@ -18,11 +18,11 @@ const IndexPage = () => (
   <div className="flex flex-col">
     <Navbar />
     <div className="flex w-full">
-      <div className="w-1/6 hidden md:flex"></div>
-      <div className="flex-col w-100 p-8 md:p-0 md:w-3/6 md:mt-12 font-mono">
-        <p className="text-base text-3xl md:text-5xl font-bold leading-tight">Learning starts</p>
-        <p className="mb-1 text-base text-3xl md:text-5xl font-bold leading-tight">with Treetop.</p>
-        <p className="mb-2 text-md md:text-xl pr-16">
+      <div className="hidden w-1/6 md:flex"></div>
+      <div className="flex-col p-8 font-mono w-100 md:p-0 md:w-3/6 md:mt-12">
+        <p className="text-base text-3xl font-bold leading-tight md:text-5xl">Learning starts</p>
+        <p className="mb-1 text-base text-3xl font-bold leading-tight md:text-5xl">with Treetop.</p>
+        <p className="pr-16 mb-2 text-md md:text-xl">
           A free computer science education for any and all marginalized
           students - <span className="font-bold">that's our promise.</span>
         </p>
@@ -40,19 +40,19 @@ const IndexPage = () => (
       style={bodyColor}
     >
       <div className="flex flex-row">
-        <div className="hidden md:flex w-1/6"> </div>
-        <div className="w-100 md:w-4/6 mt-16">
+        <div className="hidden w-1/6 md:flex"> </div>
+        <div className="mt-16 w-100 md:w-4/6">
           <LandingCard
             title="Creativity"
             body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing - all absolutely free."
             src={creativity}
           />
         </div>
-        <div className="hidden md:flex w-1/6"> </div>
+        <div className="hidden w-1/6 md:flex"> </div>
       </div>
       <div className="flex flex-row">
-        <div className="hidden md:flex w-1/6"> </div>
-        <div className="w-100 md:w-4/6 mt-4">
+        <div className="hidden w-1/6 md:flex"> </div>
+        <div className="mt-4 w-100 md:w-4/6">
           <LandingCard
             title="Support"
             reversed="true"
@@ -60,7 +60,7 @@ const IndexPage = () => (
             src={connection}
           />
         </div>
-        <div className="hidden md:flex w-1/6"> </div>
+        <div className="hidden w-1/6 md:flex"> </div>
       </div>
     </div>
     <Footer />
