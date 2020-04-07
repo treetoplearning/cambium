@@ -11,7 +11,7 @@ const bodyColor = {
 };
 
 const BlogPage = () => (
-  <div className="flex flex-col">
+  <div className="flex flex-col font-mono">
     <Navbar />
     <div className="flex justify-center w-full pt-10">
         <img src={blog} alt="hello" />
@@ -20,6 +20,16 @@ const BlogPage = () => (
       className="flex flex-col w-full h-auto pb-12 "
       style={bodyColor}
     >
+        <section class="py-12">
+        <div class="container mx-auto">
+            <div>
+                <h1 class="text-2xl font-black text-white pb-6 px-6 md:px-12">
+                    Code Green - Treetop Learning's Official Blog
+                </h1>
+            </div>
+     
+        </div>
+    </section>
       
     </div>
     <div id="contact">
