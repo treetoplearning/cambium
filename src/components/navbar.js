@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import RegisterButton from "./registerbutton";
 
 import logo from "../static/logo.svg";
 import { Link } from "gatsby";

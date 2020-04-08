@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 
 import "../css/global.css";
@@ -11,7 +10,7 @@ const BlogTemplate = () => (
       <div class="">
         <img
           src={mentorship}
-          alt=""
+          alt="mentorship"
           class="h-56 w-full px-4 pt-4 border-white "
         />
       </div>
@@ -46,7 +45,6 @@ const BlogTemplate = () => (
 );
 
 BlogTemplate.propTypes = {
-  source: PropTypes.string,
 };
 
 BlogTemplate.defaultProps = {};
