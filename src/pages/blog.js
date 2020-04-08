@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import BlogTemplate from "../components/blogtemplate";
 
 import blog from "../static/blog.svg";
 import "../css/global.css";
@@ -20,14 +21,17 @@ const BlogPage = () => (
       className="flex flex-col w-full h-auto pb-12 "
       style={bodyColor}
     >
-        <section class="py-12">
-        <div class="container mx-auto">
+        <section className="flex py-12">
+        <div className="container mx-auto">
             <div>
-                <h1 class="text-2xl font-black text-white pb-6 px-6 md:px-12">
+                <h1 className="flex justify-center px-6 pb-6 text-2xl font-black text-white md:px-12">
                     Code Green - Treetop Learning's Official Blog
                 </h1>
             </div>
-     
+            <div className="flex justify-center">
+            <BlogTemplate/>
+            </div>
+            
         </div>
     </section>
       
