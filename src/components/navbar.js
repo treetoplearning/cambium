@@ -10,14 +10,14 @@ const Navbar = () => {
 
   const toggle = () => setIsOpen(!isOpen);
   return(
-    <nav class="bg-transparent font-mono">
+    <nav className="font-mono bg-transparent">
       <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button onClick={toggle} className="inline-flex items-center justify-center p-2 text-base transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-green-700 focus:outline-none focus:bg-green-700 focus:text-white">
               <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                <path className={ isOpen ? 'hidden' : 'inline-flex' } stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                <path className={ isOpen ? 'inline-flex' : 'hidden' } stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                <path className={ isOpen ? 'hidden' : 'inline-flex' } strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                <path className={ isOpen ? 'inline-flex' : 'hidden' } strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
