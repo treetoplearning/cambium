@@ -5,8 +5,10 @@ import LinesEllipsis from "react-lines-ellipsis";
 import "../css/global.css";
 import mentorship from "../static/mentorship.svg";
 import { Link } from "gatsby";
+import { format } from 'date-fns'
 
 const BlogPreview = (node) => {
+
   return(
   <Link to={node.node.frontmatter.path}>
     <div className="flex flex-wrap justify-center px-6 ">
@@ -20,24 +22,11 @@ const BlogPreview = (node) => {
             />
           </div>
           <div className="px-4 py-4 md:px-10">
-            <h1 className="text-lg font-bold">Treetop's first post.</h1>
-            <div className="py-4">
-              <LinesEllipsis
-                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-  quas sapiente voluptate earum natus facilis dolor deserunt dolorum
-  tempora obcaecati consequatur rem, vel distinctio perferendis tempore
-  nemo sequi eos accusantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-  quas sapiente voluptate earum natus facilis dolor deserunt dolorum
-  tempora obcaecati consequatur rem, vel distinctio perferendis tempore
-  nemo sequi eos accusantium"
-                maxLine="1"
-                ellipsis="..."
-                trimRight
-                basedOn="words"
-              />
+            <h1 className="text-lg font-bold">{node.node.frontmatter.title}</h1>
+            <div className="py-4 truncate" dangerouslySetInnerHTML={{__html: node.node.html}}>
             </div>
             <div className="flex flex-col justify-between pt-8 sm:flex-row">
-              <div className="flex text-sm font-medium">{node.node.frontmatter.path}</div>
+              <div className="flex text-sm font-medium">{format(new Date(node.node.frontmatter.date), 'MM/dd/yyyy')}</div>
               
             </div>
           </div>

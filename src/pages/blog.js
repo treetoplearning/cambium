@@ -16,7 +16,6 @@ const BlogPage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  console.log(edges);
   return (
     <div className="flex flex-col font-mono">
       <Navbar />
@@ -24,15 +23,15 @@ const BlogPage = ({
         <img src={blog} alt="hello" />
       </div>
       <div className="flex flex-col w-full h-auto pb-12 " style={bodyColor}>
-        <section className="flex py-12">
+        <section className="py-12">
           <div className="container mx-auto">
-            <div>
-              <h1 className="flex justify-center px-6 pb-6 text-2xl font-black text-white md:px-12">
+            <div className="flex justify-center">
+              <h1 className="px-6 pb-6 text-2xl font-black text-white md:px-12">
                 Code Green - Treetop Learning's Official Blog
               </h1>
             </div>
             <div className="flex flex-col justify-center">
-              { edges.map( e => <BlogPreview node={e.node}></BlogPreview>)}
+              { edges.map( e => <BlogPreview node={e.node} key={e.node.id}></BlogPreview>)}
             </div>
           </div>
         </section>
@@ -51,11 +50,13 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
       edges {
         node {
+          html
           id
           excerpt(pruneLength: 250)
           frontmatter {
             path
             title
+            date
           }
         }
       }

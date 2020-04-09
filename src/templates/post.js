@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Navbar from "../components/navbar";
 
 import mentorship from "../static/mentorship.svg";
+import { format } from 'date-fns'
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
@@ -12,8 +13,8 @@ export default function Template({ data }) {
 
     <div class="flex bg-white w-full flex-wrap px-6 font-mono">
 
-      <div class="flex w-full lg:w-2/3 md:px-4 lg:px-6 py-5 justify-center ">
-        <div class="bg-white hover:shadow-xl rounded rounded-xl transition transform duration-300 hover:scale-105 hover:opacity-75 ">
+      <div class="flex w-full lg:w-2/3 md:px-4 lg:px-6 py-5 ">
+        <div class="bg-white rounded rounded-xl transition transform ">
           <div class="">
             <img
               src={mentorship}
@@ -30,7 +31,8 @@ export default function Template({ data }) {
               tempore nemo sequi eos accusantium...
             </p>
             <div class="flex flex-col sm:flex-row justify-between pt-8">
-              <div class="flex text-sm font-medium">April 6, 2020</div>
+              <div class="flex text-sm font-medium">{format(new Date(post.frontmatter.date), 'MM/dd/yyyy')}</div>
+           
               <div class="flex ">
                 <div class="flex text-sm justify-between font-medium">
                   Share:
@@ -58,6 +60,7 @@ export const postQuery = graphql`
       frontmatter {
         path
         title
+        date
       }
     }
   }
