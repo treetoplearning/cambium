@@ -16,15 +16,14 @@ const BlogPreview = (node) => {
         <div className="transition duration-300 transform bg-white rounded hover:shadow-xl rounded-xl hover:scale-105 hover:opacity-75 ">
           <div className="">
             <img
-              src={mentorship}
+              src={node.node.frontmatter.image}
               alt="mentorship"
-              className="w-full h-56 px-4 pt-4 border-white "
+              className="w-full h-56 px-8 pt-8 border-white "
             />
           </div>
           <div className="px-4 py-4 md:px-10">
             <h1 className="text-lg font-bold">{node.node.frontmatter.title}</h1>
-            <div className="py-4 truncate" dangerouslySetInnerHTML={{__html: node.node.html}}>
-            </div>
+          
             <div className="flex flex-col justify-between pt-8 sm:flex-row">
               <div className="flex text-sm font-medium">{format(new Date(node.node.frontmatter.date), 'MM/dd/yyyy')}</div>
               

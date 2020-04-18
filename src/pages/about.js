@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import computer from "../static/computer.svg";
 import teamwork from "../static/teamwork.svg";
 import availability from "../static/availability.svg";
+import screen from "../static/screen.svg"
 import "../css/global.css";
 
 const bodyColor = {
@@ -17,7 +18,7 @@ const bodyColor = {
 const AboutPage = () => (
   <div className="flex flex-col">
     <Navbar />
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full align-bottom">
       <img src={computer} alt="hello" />
     </div>
 

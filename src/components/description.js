@@ -5,8 +5,8 @@ import "../css/global.css";
 
 const Description = ({ title, body }) => (
   <div class="flex flex-col text-white font-mono">
-    <p className="ml-6 text-xl sm:text-3xl font-medium underline">{title}</p>
-    <p className="text-md sm:text-lg text-center ">{body}</p>
+    <p className="ml-6 text-xl font-medium underline sm:text-3xl">{title}</p>
+    <p className="text-center text-md sm:text-lg ">{body}</p>
   </div>
 );
 

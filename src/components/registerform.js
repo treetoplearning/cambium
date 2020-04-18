@@ -13,7 +13,7 @@ const RegisterForm = () => (
         </h2>
       </div>
       <form
-        className="justify-between py-4 md:mx-12 mt -8"
+        className="justify-between py-4 font-mono md:mx-12 mt -8"
         action="#"
         method="POST"
       >

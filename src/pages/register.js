@@ -15,7 +15,7 @@ const bodyColor = {
 const RegisterPage = () => (
   <div className="flex flex-col">
     <Navbar />
-    <div className="flex justify-center w-full mt-32">
+    <div className="flex justify-center w-full mt-32 align-bottom">
       <img src={mentorship} alt="mentorship"/>
     </div>
 
