@@ -2,7 +2,6 @@ import React from "react";
 
 import { Link } from "gatsby";
 import "../css/global.css";
-import { format } from 'date-fns'
 
 const RegisterForm = () => (
   <div className="flex items-center justify-center min-h-screen px-4 font-mono bg-gray-50 sm:px-6 lg:px-8">

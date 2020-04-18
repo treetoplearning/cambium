@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import Navbar from "../components/navbar";
 
-import mentorship from "../static/mentorship.svg";
 import { format } from "date-fns";
 
 import "../css/markdown.css";
@@ -32,7 +31,7 @@ export default function Template({ data }) {
                
               </div>
               <div class="flex flex-col sm:flex-row justify-between pt-8">
-                {/* <div class="flex text-sm font-medium">{format(new Date(post.frontmatter.date), 'MM/dd/yyyy')}</div> */}
+                     <div className="flex text-sm font-medium">{format(new Date(post.frontmatter.date), 'MM/dd/yyyy')}</div>
 
                 <div class="flex ">
                   <div class="flex text-sm justify-between font-medium">
@@ -60,6 +59,7 @@ export const postQuery = graphql`
       html
       frontmatter {
         path
+        date
         title
         image
       }

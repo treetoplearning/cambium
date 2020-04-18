@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
           <div className="absolute inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
             <Link to="/" className="p-1 text-gray-400 transition duration-150 ease-in-out border-2 border-transparent rounded-full hover:text-white focus:outline-none focus:text-white ">
-              <img src={logo} className="w-10 h-10"/>
+              <img src={logo} alt="logo" className="w-10 h-10"/>
             </Link>
           </div>
           <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-end">

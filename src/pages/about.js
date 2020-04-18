@@ -6,7 +6,6 @@ import Footer from "../components/footer";
 import computer from "../static/computer.svg";
 import teamwork from "../static/teamwork.svg";
 import availability from "../static/availability.svg";
-import screen from "../static/screen.svg"
 import "../css/global.css";
 
 const bodyColor = {

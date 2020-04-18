@@ -1,9 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
-import LinesEllipsis from "react-lines-ellipsis";
 
 import "../css/global.css";
-import mentorship from "../static/mentorship.svg";
 import { Link } from "gatsby";
 import { format } from 'date-fns'
 
