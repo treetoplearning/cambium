@@ -51,10 +51,10 @@ const Footer = () => (
       <hr className="mt-10" />
       <div className="flex justify-between mt-8">
         <div className="flex flex-col md:flex-row">
+          {/* <p className="mr-8"> Sponsor </p>
           <p className="mr-8"> Sponsor </p>
           <p className="mr-8"> Sponsor </p>
-          <p className="mr-8"> Sponsor </p>
-          <p className="mr-8"> Sponsor </p>
+          <p className="mr-8"> Sponsor </p> */}
         </div>
         <div className="flex">
           <a className="max-w-md ml-8" href="https://twitter.com">
