@@ -3,7 +3,13 @@ module.exports = {
     extend: {
       colors: {
         base: '#38A169',
+        secondary: '#48BB78',
+        tertiary: '#68D391',
         bark: '#855D51'
+      },
+      backgroundColor: {
+        secondary: '#48BB78',
+        tertiary: '#68D391',
       },
       fontFamily: {
         base: ['Roboto'],

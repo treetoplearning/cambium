@@ -6,7 +6,7 @@ import "../css/global.css";
 
 const RegisterButton = ({ text }) => (
   <Link to="register">
-    <p class="mr-10 px-8 mb-0 py-1 rounded-full text-white bg-base">{text}</p>
+    <p class="mr-10 px-8 mb-0 py-1 rounded-xl text-white bg-base">{text}</p>
   </Link>
 );
 

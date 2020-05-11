@@ -22,16 +22,17 @@ const Navbar = () => {
             </button>
           </div>
           <div className="absolute inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
-            <Link to="/" className="p-1 text-gray-400 transition duration-150 ease-in-out border-2 border-transparent rounded-full hover:text-white focus:outline-none focus:text-white ">
+            <Link to="/" className="p-1 text-gray-400 transition duration-150 ease-in-out border-2 border-transparent rounded-full hover:text-white focus:outline focus:text-white ">
               <img src={logo} alt="logo" className="w-10 h-10"/>
             </Link>
           </div>
           <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-end">
             <div className="hidden sm:block sm:ml-6">
               <div className="flex">
-                <Link to="about" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">About</Link>
-                <Link to="blog" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Blog</Link>
-                <Link to="register" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Register</Link>
+                <Link to="about" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">About</Link>
+                <Link to="blog" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Blog</Link>
+                <Link to="blog" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Log-In</Link>
+                <Link to="register" className="px-4 py-2 ml-4 font-medium leading-5 text-white transition duration-150 ease-in-out bg-green-700 rounded-lg text-md hover:bg-secondary focus:outline ">Register</Link>
               </div>
             </div>
           </div>
@@ -39,9 +40,10 @@ const Navbar = () => {
       </div>
       <div className={ isOpen ? 'block' : 'hidden' }>
         <div className="px-2 pt-2 pb-3">
-          <Link to="about" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">About</Link>
-          <Link to="blog" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Blog</Link>
-          <Link to="register" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-grgreenay-700 focus:outline-none focus:text-white focus:bg-green-700">Register</Link>
+          <Link to="about" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">About</Link>
+          <Link to="blog" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Blog</Link>
+          <Link to="blog" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Log-In</Link>
+          <Link to="register" className="block px-4 py-2 mt-1 font-medium text-white text-gray-300 transition duration-150 ease-in-out bg-green-700 rounded-lg hover:bg-secondary focus:outline ">Register</Link>
         </div>
       </div>
     </nav>
