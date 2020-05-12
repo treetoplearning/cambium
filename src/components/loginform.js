@@ -3,12 +3,22 @@ import React from "react";
 import { Link } from "gatsby";
 import "../css/global.css";
 
-const RegisterForm = () => (
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faGoogle,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+
+library.add(faGoogle, faGithub);
+
+const LoginForm = () => (
   <div className="flex items-center justify-center min-h-screen px-4 font-mono bg-gray-50 sm:px-6 lg:px-8">
     <div className="w-full max-w-xl px-4 py-8 bg-white rounded-xl md:px-36">
       <div>
         <h2 className="mt-6 text-xl font-extrabold leading-9 text-center text-gray-900 md:text-3xl">
-          Register
+          Login
         </h2>
       </div>
       <form
@@ -19,36 +29,40 @@ const RegisterForm = () => (
         <input type="hidden" name="remember" value="true" />
         <div className="flex flex-col shadow-sm">
           <div className="flex flex-row my-2 ">
-            <div className="w-1/2 pr-2">
-              <input
-              required
-                aria-label="First Name"
-                name="firstName"
-                type="name"
-                className="relative block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
-                placeholder="First Name"
-              />
+            <div className="w-full">
+        
+
+           
+              <button
+            
+                aria-label="Continue with Google"
+                name="continueGoogle"
+                readOnly
+                className="relative items-center block w-full px-3 py-2 text-white rounded-md appearance-none bg-blueGoogle sm:text-sm sm:leading-5"
+                
+                
+              >
+               
+                <FontAwesomeIcon icon={faGoogle} className="absolute left-0 ml-4" />
+                
+                
+                 Continue with Google 
+                </button>
+               
             </div>
-            <div className="w-1/2 pl-2">
-              <input
-              required
-                aria-label="Last Name"
-                name="lastName"
-                type="name"
-                className="relative block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
-                placeholder="Last Name"
-              />
-            </div>
+            
           </div>
           <div className="my-2">
-            <input
-            required
-              aria-label="Email"
-              name="email"
-              type="email"
-              className="relative block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
-              placeholder="Email"
-            />
+            <button
+            
+              aria-label="Continue with Google"
+              name="continueGoogle"
+              readOnly
+              className="relative block w-full px-3 py-2 text-white rounded-md appearance-none bg-blackGithub sm:text-sm sm:leading-5"
+            >
+              <FontAwesomeIcon icon={faGithub} className="absolute left-0 ml-4" />
+              Continue with Github
+            </button>
           </div>
           <div className="my-2">
             <input
@@ -133,8 +147,8 @@ const RegisterForm = () => (
   </div>
 );
 
-RegisterForm.propTypes = {};
+LoginForm.propTypes = {};
 
-RegisterForm.defaultProps = {};
+LoginForm.defaultProps = {};
 
-export default RegisterForm;
+export default LoginForm;

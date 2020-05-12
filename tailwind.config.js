@@ -5,11 +5,13 @@ module.exports = {
         base: '#38A169',
         secondary: '#48BB78',
         tertiary: '#68D391',
-        bark: '#855D51'
+        bark: '#855D51',
       },
       backgroundColor: {
         secondary: '#48BB78',
         tertiary: '#68D391',
+        blueGoogle: '#4285F5',
+        blackGithub: '#211f1f',
       },
       fontFamily: {
         base: ['Roboto'],

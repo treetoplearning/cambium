@@ -31,7 +31,7 @@ const Navbar = () => {
               <div className="flex">
                 <Link to="about" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">About</Link>
                 <Link to="blog" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Blog</Link>
-                <Link to="blog" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Log-In</Link>
+                <Link to="login" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Login</Link>
                 <Link to="register" className="px-4 py-2 ml-4 font-medium leading-5 text-white transition duration-150 ease-in-out bg-green-700 rounded-lg text-md hover:bg-secondary focus:outline ">Register</Link>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3">
           <Link to="about" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">About</Link>
           <Link to="blog" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Blog</Link>
-          <Link to="blog" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Log-In</Link>
+          <Link to="login" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-secondary focus:outline ">Login</Link>
           <Link to="register" className="block px-4 py-2 mt-1 font-medium text-white text-gray-300 transition duration-150 ease-in-out bg-green-700 rounded-lg hover:bg-secondary focus:outline ">Register</Link>
         </div>
       </div>
