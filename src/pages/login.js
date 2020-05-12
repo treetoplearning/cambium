@@ -15,7 +15,7 @@ const bodyColor = {
 const LoginPage = () => (
   <div className="flex flex-col">
     <Navbar />
-    <div className="flex justify-center w-full mt-32 -mb-1 align-bottom">
+    <div className="flex justify-center w-full mt-24 -mb-1 align-bottom">
       <img src={programmer} alt="programmer"/>
     </div>
 

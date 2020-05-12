@@ -4,15 +4,15 @@ import { Link } from "gatsby";
 import "../css/global.css";
 
 const RegisterForm = () => (
-  <div className="flex items-center justify-center min-h-screen px-4 font-mono bg-gray-50 sm:px-6 lg:px-8">
-    <div className="w-full max-w-xl px-4 py-8 bg-white rounded-xl md:px-36">
+  <div className="flex items-center justify-center px-4 my-24 font-mono bg-gray-50 sm:px-6 lg:px-8">
+    <div className="w-full max-w-xl px-6 pt-6 pb-12 bg-white rounded-xl md:px-36">
       <div>
-        <h2 className="mt-6 text-xl font-extrabold leading-9 text-center text-gray-900 md:text-3xl">
+        <h2 className="mt-6 text-2xl font-extrabold leading-9 text-center text-gray-900 md:text-3xl">
           Register
         </h2>
       </div>
       <form
-        className="justify-between py-4 mt-8 font-mono md:mx-12"
+        className="justify-between py-4 mt-4 font-mono md:mx-12"
         action="#"
         method="POST"
       >

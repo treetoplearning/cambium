@@ -6,77 +6,80 @@ import "../css/global.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-  faGoogle,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 library.add(faGoogle, faGithub);
 
 const LoginForm = () => (
-  <div className="flex items-center justify-center min-h-screen px-4 font-mono bg-gray-50 sm:px-6 lg:px-8">
-    <div className="w-full max-w-xl px-4 py-8 bg-white rounded-xl md:px-36">
+  <div className="flex items-center justify-center px-4 my-24 font-mono bg-gray-50 sm:px-6 lg:px-8">
+    <div className="w-full max-w-xl px-6 pt-6 pb-12 bg-white rounded-xl md:px-36">
       <div>
-        <h2 className="mt-6 text-xl font-extrabold leading-9 text-center text-gray-900 md:text-3xl">
+        <h2 className="mt-6 text-2xl font-extrabold leading-9 text-center text-gray-900 md:text-3xl">
           Login
         </h2>
       </div>
       <form
-        className="justify-between py-4 mt-8 font-mono md:mx-12"
+        className="justify-between py-4 mt-4 font-mono md:mx-12"
         action="#"
         method="POST"
       >
         <input type="hidden" name="remember" value="true" />
         <div className="flex flex-col shadow-sm">
-          <div className="flex flex-row my-2 ">
+          <div className="flex flex-row my-2">
             <div className="w-full">
-        
-
-           
               <button
-            
                 aria-label="Continue with Google"
                 name="continueGoogle"
                 readOnly
-                className="relative items-center block w-full px-3 py-2 text-white rounded-md appearance-none bg-blueGoogle sm:text-sm sm:leading-5"
-                
-                
+                className="relative flex items-center justify-center w-full px-3 py-2 text-white rounded-md bg-blueGoogle sm:text-sm sm:leading-5"
               >
-               
-                <FontAwesomeIcon icon={faGoogle} className="absolute left-0 ml-4" />
+       
+      
+        
+                  
                 
+                <FontAwesomeIcon icon={faGoogle} className="absolute left-0 ml-3 text-lg" />
+       
+
+              
+                <div className="w-full"> 
+                <p> Continue with Google </p>
+                  </div>
                 
-                 Continue with Google 
-                </button>
-               
+              </button>
             </div>
-            
           </div>
-          <div className="my-2">
+          <div className="mb-10 ">
             <button
-            
               aria-label="Continue with Google"
               name="continueGoogle"
               readOnly
-              className="relative block w-full px-3 py-2 text-white rounded-md appearance-none bg-blackGithub sm:text-sm sm:leading-5"
+              className="relative flex items-center justify-center w-full px-3 py-2 text-white rounded-md bg-blackGithub sm:text-sm sm:leading-5"
             >
-              <FontAwesomeIcon icon={faGithub} className="absolute left-0 ml-4" />
-              Continue with Github
+             
+             <FontAwesomeIcon icon={faGithub} className="absolute left-0 ml-3 text-lg" />
+        
+                  
+                
+
+                <div className="w-full"> 
+                <p> Continue with Github </p>
+                  </div>
             </button>
           </div>
           <div className="my-2">
             <input
-              aria-label="Username"
+              aria-label="Email/Username"
               required
-              name="username"
+              name="email/username"
               type="username"
               className="relative block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
-              placeholder="Username"
+              placeholder="Email or username"
             />
           </div>
           <div className="my-2">
             <input
-            required
+              required
               aria-label="Password"
               name="password"
               type="password"
@@ -84,16 +87,7 @@ const LoginForm = () => (
               placeholder="Password"
             />
           </div>
-          <div className="my-2">
-            <input
-            required
-              aria-label="Confirm Password"
-              name="confirmPassword"
-              type="password"
-              className="relative block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
-              placeholder="Confirm Password"
-            />
-          </div>
+          
         </div>
 
         <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
@@ -139,7 +133,7 @@ const LoginForm = () => (
                 />
               </svg>
             </span>
-            Register
+            Log In
           </button>
         </div>
       </form>
