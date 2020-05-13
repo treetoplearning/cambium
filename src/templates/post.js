@@ -36,10 +36,10 @@ export default function Template({ data }) {
                 <div class="flex ">
                   <div class="flex text-sm justify-between font-medium">
                     Share:
-                    <a href="" class="text-blue-700 px-1 ">
+                    <a href="/" class="text-blue-700 px-1 ">
                       Facebook
                     </a>
-                    <a href="" class="text-blue-500 px-1 ">
+                    <a href="/" class="text-blue-500 px-1 ">
                       Twitter
                     </a>
                   </div>

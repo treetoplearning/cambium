@@ -33,19 +33,14 @@ const LoginForm = () => (
                 readOnly
                 className="relative flex items-center justify-center w-full px-3 py-2 text-white rounded-md bg-blueGoogle sm:text-sm sm:leading-5"
               >
-       
-      
-        
-                  
-                
-                <FontAwesomeIcon icon={faGoogle} className="absolute left-0 ml-3 text-lg" />
-       
+                <FontAwesomeIcon
+                  icon={faGoogle}
+                  className="absolute left-0 ml-3 text-lg"
+                />
 
-              
-                <div className="w-full"> 
-                <p> Continue with Google </p>
-                  </div>
-                
+                <div className="w-full">
+                  <p> Continue with Google </p>
+                </div>
               </button>
             </div>
           </div>
@@ -56,15 +51,14 @@ const LoginForm = () => (
               readOnly
               className="relative flex items-center justify-center w-full px-3 py-2 text-white rounded-md bg-blackGithub sm:text-sm sm:leading-5"
             >
-             
-             <FontAwesomeIcon icon={faGithub} className="absolute left-0 ml-3 text-lg" />
-        
-                  
-                
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="absolute left-0 ml-3 text-lg"
+              />
 
-                <div className="w-full"> 
+              <div className="w-full">
                 <p> Continue with Github </p>
-                  </div>
+              </div>
             </button>
           </div>
           <div className="my-2">
@@ -87,7 +81,6 @@ const LoginForm = () => (
               placeholder="Password"
             />
           </div>
-          
         </div>
 
         <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
