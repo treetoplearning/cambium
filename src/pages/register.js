@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import RegisterForm from "../components/registerform"
 
 import mentorship from "../static/mentorship.svg";
@@ -14,7 +12,6 @@ const bodyColor = {
 
 const RegisterPage = () => (
   <div className="flex flex-col">
-    <Navbar />
     <div className="flex justify-center w-full mt-20 align-bottom">
       <img src={mentorship} alt="mentorship"/>
     </div>
@@ -26,9 +23,6 @@ const RegisterPage = () => (
 
 
       <RegisterForm/>
-    </div>
-    <div>
-      <Footer />
     </div>
   </div>
 );

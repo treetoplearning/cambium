@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "../components/navbar";
 import LandingCard from "../components/landingcard";
-import Footer from "../components/footer";
+
 
 import computer from "../static/computer.svg";
 import teamwork from "../static/teamwork.svg";
@@ -16,7 +15,7 @@ const bodyColor = {
 
 const AboutPage = () => (
   <div className="flex flex-col">
-    <Navbar />
+   
     <div className="flex justify-center w-full align-bottom">
       <img src={computer} alt="hello" />
     </div>
@@ -50,7 +49,7 @@ const AboutPage = () => (
       </div>
     </div>
     <div id="contact">
-      <Footer />
+    
     </div>
   </div>
 );
