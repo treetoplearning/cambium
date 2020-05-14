@@ -11,7 +11,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "date-fns": "^2.11.1",
-    "gatsby": "^2.19.45",
+    "gatsby": "^2.21.29",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-netlify-cms": "^4.2.2",
@@ -46,7 +46,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
