@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Navbar from "../components/navbar";
 
 import { format } from "date-fns";
 
@@ -10,7 +9,6 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data;
   return (
     <div className="w-full">
-      <Navbar />
 
       <div class="flex justify-center bg-white px-6 font-mono">
         <div class="flex w-full lg:w-1/2 md:px-4 lg:px-6 py-5">

@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import BlogPreview from "../components/blogpreview";
 
 import blog from "../static/blog.svg";
@@ -18,7 +16,6 @@ const BlogPage = ({
 }) => {
   return (
     <div className="flex flex-col font-mono">
-      <Navbar />
       <div className="flex justify-center w-full pt-10">
         <img src={blog} alt="hello" />
       </div>
@@ -31,13 +28,12 @@ const BlogPage = ({
               </h1>
             </div>
             <div className="flex flex-col justify-center">
-              { edges.map( e => <BlogPreview node={e.node} key={e.node.id}></BlogPreview>)}
+              {edges.map((e) => (
+                <BlogPreview node={e.node} key={e.node.id}></BlogPreview>
+              ))}
             </div>
           </div>
         </section>
-      </div>
-      <div id="contact">
-        <Footer />
       </div>
     </div>
   );
