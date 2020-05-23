@@ -31,7 +31,7 @@ const Navbar = () => {
               <div className="flex">
                 <Link to="about" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">About</Link>
                 <Link to="blog" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Blog</Link>
-                <Link to="register" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Register</Link>
+                <Link to="heartwood/register" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Register</Link>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3">
           <Link to="about" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">About</Link>
           <Link to="blog" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Blog</Link>
-          <Link to="register" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-grgreenay-700 focus:outline-none focus:text-white focus:bg-green-700">Register</Link>
+          <Link to="heartwood/register" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-grgreenay-700 focus:outline-none focus:text-white focus:bg-green-700">Register</Link>
         </div>
       </div>
     </nav>
