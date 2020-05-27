@@ -1,24 +1,24 @@
-import PropTypes from "prop-types";
-import React from "react";
+import PropTypes from "prop-types"
+import React from "react"
 
-import logo from "../static/logo.svg";
-import "../css/global.css";
+import logo from "../static/logo.svg"
+import "../css/global.css"
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import {
   faTwitter,
   faFacebook,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+  faGithub
+} from "@fortawesome/free-brands-svg-icons"
 
-library.add(faTwitter, faFacebook, faGithub);
+library.add(faTwitter, faFacebook, faGithub)
 
 const footerColor = {
   background:
-    "linear-gradient(180deg, rgba(133,93,81,1) 0%, rgba(164,129,119,1) 100%, rgba(168,134,124,1) 100%)",
-};
+    "linear-gradient(180deg, rgba(133,93,81,1) 0%, rgba(164,129,119,1) 100%, rgba(168,134,124,1) 100%)"
+}
 
 const Footer = () => (
   <div
@@ -42,10 +42,10 @@ const Footer = () => (
             </a>
           </p>
         </div>
-        <div className="flex items-center justify-center md:w-1/2"> 
-        <div className="flex flex-col self-center justify-center w-64 h-48 bg-white md:w-3/5 rounded-xl">
-          <img src={logo} alt="logo" />
-        </div>
+        <div className="flex items-center justify-center md:w-1/2">
+          <div className="flex flex-col self-center justify-center w-64 h-48 bg-white md:w-3/5 rounded-xl">
+            <img src={logo} alt="logo" />
+          </div>
         </div>
       </div>
       <hr className="mt-10" />
@@ -74,12 +74,12 @@ const Footer = () => (
     </div>
     <div className="hidden w-1/6 md:flex"></div>
   </div>
-);
+)
 
 Footer.propTypes = {
-  source: PropTypes.string,
-};
+  source: PropTypes.string
+}
 
-Footer.defaultProps = {};
+Footer.defaultProps = {}
 
-export default Footer;
+export default Footer

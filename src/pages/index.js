@@ -1,24 +1,28 @@
-import React from "react";
-import RegisterButton from "../components/registerbutton";
-import LandingCard from "../components/landingcard";
+import React from "react"
+import RegisterButton from "../components/registerbutton"
+import LandingCard from "../components/landingcard"
 
-import wave from "../static/wave.svg";
-import connection from "../static/connection.svg";
-import creativity from "../static/creativity.svg";
-import "../css/global.css";
+import wave from "../static/wave.svg"
+import connection from "../static/connection.svg"
+import creativity from "../static/creativity.svg"
+import "../css/global.css"
 
 const bodyColor = {
   background:
-    "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)",
-};
+    "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
+}
 
 const IndexPage = () => (
   <div className="flex flex-col">
     <div className="flex w-full">
       <div className="hidden w-1/6 md:flex"></div>
       <div className="flex-col p-8 font-mono w-100 md:p-0 md:w-3/6 md:mt-12">
-        <p className="text-base text-3xl font-bold leading-tight md:text-5xl">Learning starts</p>
-        <p className="mb-1 text-base text-3xl font-bold leading-tight md:text-5xl">with Treetop.</p>
+        <p className="text-base text-3xl font-bold leading-tight md:text-5xl">
+          Learning starts
+        </p>
+        <p className="mb-1 text-base text-3xl font-bold leading-tight md:text-5xl">
+          with Treetop.
+        </p>
         <p className="pr-16 mb-2 text-md md:text-xl">
           A free computer science education for any and all marginalized
           students - <span className="font-bold">that's our promise.</span>
@@ -61,6 +65,6 @@ const IndexPage = () => (
       </div>
     </div>
   </div>
-);
+)
 
-export default IndexPage;
+export default IndexPage

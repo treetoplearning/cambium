@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import { Link } from "gatsby";
-import "../css/global.css";
+import { Link } from "gatsby"
+import "../css/global.css"
 
 const RegisterForm = () => (
   <div className="flex items-center justify-center min-h-screen px-4 font-mono bg-gray-50 sm:px-6 lg:px-8">
@@ -21,7 +21,7 @@ const RegisterForm = () => (
           <div className="flex flex-row my-2 ">
             <div className="w-1/2 pr-2">
               <input
-              required
+                required
                 aria-label="First Name"
                 name="firstName"
                 type="name"
@@ -31,7 +31,7 @@ const RegisterForm = () => (
             </div>
             <div className="w-1/2 pl-2">
               <input
-              required
+                required
                 aria-label="Last Name"
                 name="lastName"
                 type="name"
@@ -42,7 +42,7 @@ const RegisterForm = () => (
           </div>
           <div className="my-2">
             <input
-            required
+              required
               aria-label="Email"
               name="email"
               type="email"
@@ -62,7 +62,7 @@ const RegisterForm = () => (
           </div>
           <div className="my-2">
             <input
-            required
+              required
               aria-label="Password"
               name="password"
               type="password"
@@ -72,7 +72,7 @@ const RegisterForm = () => (
           </div>
           <div className="my-2">
             <input
-            required
+              required
               aria-label="Confirm Password"
               name="confirmPassword"
               type="password"
@@ -131,10 +131,10 @@ const RegisterForm = () => (
       </form>
     </div>
   </div>
-);
+)
 
-RegisterForm.propTypes = {};
+RegisterForm.propTypes = {}
 
-RegisterForm.defaultProps = {};
+RegisterForm.defaultProps = {}
 
-export default RegisterForm;
+export default RegisterForm
