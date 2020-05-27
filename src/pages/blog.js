@@ -4,6 +4,8 @@ import BlogPreview from "../components/blogpreview"
 import blog from "../static/blog.svg"
 import "../css/global.css"
 
+import { graphql } from 'gatsby' 
+
 const bodyColor = {
   background:
     "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
