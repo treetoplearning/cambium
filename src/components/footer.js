@@ -6,6 +6,7 @@ import "../css/global.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import EmailSignUp from "../components/emailsignup"
 
 import {
   faTwitter,
@@ -41,6 +42,10 @@ const Footer = () => (
               Donate today.
             </a>
           </p>
+          <div className="mt-8">
+          <EmailSignUp/>
+          </div>
+         
         </div>
         <div className="flex items-center justify-center md:w-1/2">
           <div className="flex flex-col self-center justify-center w-64 h-48 bg-white md:w-3/5 rounded-xl">

@@ -4,7 +4,7 @@ import React from "react"
 import "../css/global.css"
 
 const Icon = ({ src }) => (
-  <div class="flex bg-white w-128 h-64 rounded-lg">
+  <div className="flex h-64 bg-white rounded-lg w-128">
     <div className="flex justify-center p-6">
       <img src={src} />
     </div>

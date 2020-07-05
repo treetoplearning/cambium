@@ -16,7 +16,7 @@ const LandingCard = ({ title, body, src, reversed }) => (
     <div className="flex items-center p-6 w-100 md:w-1/2">
       <Description title={title} body={body} />
     </div>
-    <div className="flex items-center p-6 w-100 md:w-1/2">
+    <div className="flex items-center self-center w-3/4 p-6 w-100 md:w-1/2">
       <Holder src={src} />
     </div>
   </div>
@@ -26,7 +26,7 @@ LandingCard.propTypes = {
   title: PropTypes.string,
   body: PropTypes.string,
   src: PropTypes.string,
-  reversed: PropTypes.bool
+  reversed: PropTypes.string
 }
 
 LandingCard.defaultProps = {}

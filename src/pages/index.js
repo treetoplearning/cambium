@@ -1,7 +1,7 @@
 import React from "react"
 import RegisterButton from "../components/registerbutton"
 import LandingCard from "../components/landingcard"
-import EmailSignUp from "../components/emailsignup"
+
 
 import wave from "../static/wave.svg"
 import connection from "../static/connection.svg"
@@ -32,7 +32,7 @@ const IndexPage = () => (
       <img className="w-full mt-2 transform scale-105" src={wave} alt="" />
     </div>
 
-    <div className="flex flex-col w-full h-auto pb-12 bg-base" style={bodyColor}>
+    <div className="flex flex-col w-full h-auto pb-16 bg-base" style={bodyColor}>
       <div className="flex flex-row">
         <div className="hidden w-1/6 md:flex"> </div>
         <div className="mt-16 w-100 md:w-4/6">
@@ -56,8 +56,9 @@ const IndexPage = () => (
         </div>
         <div className="hidden w-1/6 md:flex"> </div>
       </div>
-      <div className="w-full mt-8">
-        <EmailSignUp />
+      <div className="flex justify-center w-full mt-12">
+       
+
       </div>
     </div>
   </div>
