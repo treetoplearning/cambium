@@ -1,15 +1,16 @@
-import React from "react";
-import LandingCard from "../components/landingcard";
+import React from "react"
+import LandingCard from "../components/landingcard"
 
-import computer from "../static/computer.svg";
-import teamwork from "../static/teamwork.svg";
-import availability from "../static/availability.svg";
-import "../css/global.css";
+import computer from "../static/computer.svg"
+import teamwork from "../static/teamwork.svg"
+import mentorship from "../static/mentorship.svg"
+import availability from "../static/availability.svg"
+import "../css/global.css"
 
 const bodyColor = {
   background:
-    "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)",
-};
+    "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
+}
 
 const AboutPage = () => (
   <div className="flex flex-col">
@@ -46,6 +47,6 @@ const AboutPage = () => (
       </div>
     </div>
   </div>
-);
+)
 
-export default AboutPage;
+export default AboutPage

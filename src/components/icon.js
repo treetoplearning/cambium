@@ -1,23 +1,20 @@
-import PropTypes from "prop-types";
-import React from "react";
+import PropTypes from "prop-types"
+import React from "react"
 
-import "../css/global.css";
+import "../css/global.css"
 
-
-const Icon = ({src}) => (
+const Icon = ({ src }) => (
   <div class="flex bg-white w-128 h-64 rounded-lg">
     <div className="flex justify-center p-6">
-        <img src={src}/>
+      <img src={src} />
     </div>
   </div>
-);
+)
 
 Holder.propTypes = {
   source: PropTypes.string
-};
+}
 
-Holder.defaultProps = {
-  
-};
+Holder.defaultProps = {}
 
-export default Holder;
+export default Holder
