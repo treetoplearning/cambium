@@ -7,6 +7,7 @@ import "../css/global.css"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import EmailSignUp from "../components/emailsignup"
+import Button from "../components/button"
 
 import { faTwitter, faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons"
 
@@ -17,7 +18,7 @@ const footerColor = {
 }
 
 const Footer = () => (
-  <div className="flex flex-row h-auto pt-10 pb-10 font-mono bg-bark" style={footerColor}>
+  <div className="flex flex-row h-auto pt-8 pb-8 font-mono bg-bark" style={footerColor}>
     <div className="hidden w-1/6 md:flex"></div>
     <div className="flex flex-col w-full p-8 font-hairline text-white md:p-0 md:w-4/6">
       <div className="flex flex-col justify-between md:flex-row">
@@ -32,16 +33,12 @@ const Footer = () => (
               Donate today.
             </a>
           </p>
-          <div>
-            <EmailSignUp />
+          <div className="flex">
+            <Button text="Join our newsletter" url="https://treetop-heartwod-dev.netlify.com" isTitle={false}/>
           </div>
         </div>
-        <div className="">
-         
-           
+        <div className="">    
               <img className="self-end justify-center w-full h-48 p-10 bg-white lg:h-64 lg:w-64 md:w-48 rounded-xl" src={logo} alt="logo" />
-        
-       
         </div>
       </div>
       <hr className="mt-10" />

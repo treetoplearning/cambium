@@ -1,7 +1,6 @@
 import React from "react"
-import RegisterButton from "../components/registerbutton"
+import Button from "../components/button"
 import LandingCard from "../components/landingcard"
-import EmailSignUp from "../components/emailsignup"
 
 import wave from "../static/wave.svg"
 import connection from "../static/connection.svg"
@@ -25,7 +24,7 @@ const IndexPage = () => (
           <span className="font-bold">that's our promise.</span>
         </p>
         <div className="flex">
-          <RegisterButton text="Register Today" siteURL="register" />
+          <Button text="Register Today" isTitle={true}/>
         </div>
       </div>
     </div>
