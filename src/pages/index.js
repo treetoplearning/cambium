@@ -19,7 +19,7 @@ const IndexPage = () => (
       <div className="flex-col p-8 w-100 md:p-0 md:w-3/6 md:mt-12">
         <p className="text-base text-3xl font-bold leading-tight md:text-5xl">Learning starts</p>
         <p className="mb-1 text-base text-3xl font-bold leading-tight md:text-5xl">with Treetop.</p>
-        <p className="pr-16 mb-2 text-md md:text-xl">
+        <p className="pr-16 mb-2 text-sm md:text-xl">
           A free computer science education for any and all marginalized students -{" "}
           <span className="font-bold">that's our promise.</span>
         </p>

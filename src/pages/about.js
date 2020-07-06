@@ -3,6 +3,7 @@ import LandingCard from "../components/landingcard"
 
 import computer from "../static/computer.svg"
 import teamwork from "../static/teamwork.svg"
+import mentorship from "../static/mentorship.svg"
 import availability from "../static/availability.svg"
 import "../css/global.css"
 
