@@ -39,7 +39,7 @@ const Footer = () => (
         <div className="">
          
            
-              <img className="self-end justify-center w-full h-48 p-8 bg-white lg:h-64 lg:w-64 md:w-48 rounded-xl" src={logo} alt="logo" />
+              <img className="self-end justify-center w-full h-48 p-10 bg-white lg:h-64 lg:w-64 md:w-48 rounded-xl" src={logo} alt="logo" />
         
        
         </div>

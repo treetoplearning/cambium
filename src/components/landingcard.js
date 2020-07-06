@@ -13,10 +13,10 @@ const LandingCard = ({ title, body, src, reversed }) => (
       (reversed ? "md:flex-row-reverse" : "md:flex-row")
     }
   >
-    <div className={"flex mx-4 md:mx-0 items-center w-100 md:w-1/2 " + (reversed ? "pl-6" : "pr-6")}>
+    <div className={"flex mx-4 md:mx-0 items-center w-100 md:w-1/2 " + (reversed ? "md:pl-6" : "md:pr-6")}>
       <Description title={title} body={body} />
     </div>
-    <div className={"flex items-center py-6 py w-100 md:w-1/2 " + (reversed ? "pt-6 pr-6" : "pt-6 pl-6")}>
+    <div className={"flex items-center mx-4 md:mx-0 py-6 py w-100 md:w-1/2 " + (reversed ? "md:pt-6 md:pr-6" : "md:pt-6 md:pl-6")}>
       <Holder src={src} />
     </div>
   </div>
