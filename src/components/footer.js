@@ -10,6 +10,7 @@ import EmailSignUp from "../components/emailsignup"
 
 import { faTwitter, faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons"
 
+
 library.add(faTwitter, faFacebook, faGithub)
 
 const footerColor = {
@@ -40,8 +41,6 @@ const Footer = () => (
          
            
               <img className="self-end justify-center w-full h-48 p-10 bg-white lg:h-64 lg:w-64 md:w-48 rounded-xl" src={logo} alt="logo" />
-        
-       
         </div>
       </div>
       <hr className="mt-10" />
