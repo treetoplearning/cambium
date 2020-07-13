@@ -24,7 +24,7 @@ const IndexPage = () => (
           <span className="font-bold">that's our promise.</span>
         </p>
         <div className="flex">
-          <Button text="Register Today" isTitle={true}/>
+          <Button text="Register Today" url="https://app.treetoplearning.org" isTitle={true}/>
         </div>
       </div>
     </div>
