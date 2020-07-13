@@ -11,6 +11,7 @@ import Button from "../components/button"
 
 import { faTwitter, faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons"
 
+
 library.add(faTwitter, faFacebook, faGithub)
 
 const footerColor = {

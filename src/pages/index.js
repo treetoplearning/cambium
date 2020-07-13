@@ -5,7 +5,6 @@ import LandingCard from "../components/landingcard"
 import wave from "../static/wave.svg"
 import connection from "../static/connection.svg"
 import creativity from "../static/creativity.svg"
-
 import "../css/global.css"
 
 const bodyColor = {
@@ -55,6 +54,9 @@ const IndexPage = () => (
           />
         </div>
         <div className="hidden w-1/6 md:flex"> </div>
+      </div>
+      <div className="w-full mt-8">
+        <EmailSignUp />
       </div>
     </div>
   </div>
