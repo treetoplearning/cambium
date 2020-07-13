@@ -8,8 +8,7 @@ import availability from "../static/availability.svg"
 import "../css/global.css"
 
 const bodyColor = {
-  background:
-    "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
+  background: "linear-gradient(180deg, rgba(82,140,109,0.9990371148459384) 0%, rgba(104,211,145,1) 100%)"
 }
 
 const AboutPage = () => (
@@ -18,10 +17,7 @@ const AboutPage = () => (
       <img src={computer} alt="hello" />
     </div>
 
-    <div
-      className="flex flex-col w-full h-auto pb-12 bg-base"
-      style={bodyColor}
-    >
+    <div className="flex flex-col w-full h-auto pb-12 bg-base" style={bodyColor}>
       <div className="flex flex-row">
         <div className="hidden w-1/6 md:flex"> </div>
         <div className="w-full mt-16 md:w-4/6">
