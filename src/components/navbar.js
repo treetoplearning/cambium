@@ -49,6 +49,7 @@ const Navbar = () => {
           <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-end">
             <div className="hidden sm:block sm:ml-6">
               <div className="flex">
+<<<<<<< HEAD
                 <Link
                   to="about"
                   className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
@@ -67,6 +68,12 @@ const Navbar = () => {
                 >
                   Register
                 </a>
+=======
+                <Link to="about" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">About</Link>
+                <Link to="blog" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Blog</Link>
+                <a href="https://treetop-heartwood-account.netlify.com" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Register</a>
+
+>>>>>>> develop
               </div>
             </div>
           </div>
@@ -74,6 +81,7 @@ const Navbar = () => {
       </div>
       <div className={isOpen ? "block" : "hidden"}>
         <div className="px-2 pt-2 pb-3">
+<<<<<<< HEAD
           <Link
             to="about"
             className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
@@ -92,6 +100,12 @@ const Navbar = () => {
           >
             Register
           </a>
+=======
+          <Link to="about" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">About</Link>
+          <Link to="blog" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Blog</Link>
+          <a href="https://treetop-heartwood-account.netlify.com" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Register</a>
+
+>>>>>>> develop
         </div>
       </div>
     </nav>
