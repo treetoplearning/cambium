@@ -23,7 +23,7 @@ const AboutPage = () => (
         <div className="w-full mt-16 md:w-4/6">
           <LandingCard
             title="Mentorship"
-            reversed="True"
+            reversed={true}
             body="Treetop  offers much more than lessons in coding. With the help of instructors from the nation’s most elite universities, your child will recieve an industry-relevant education so that they are prepared for all aspects of studying computer science."
             src={teamwork}
           />

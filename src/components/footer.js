@@ -6,14 +6,9 @@ import "../css/global.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import EmailSignUp from "../components/emailsignup"
-<<<<<<< HEAD
 import Button from "../components/button"
-=======
->>>>>>> develop
 
 import { faTwitter, faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons"
-
 
 library.add(faTwitter, faFacebook, faGithub)
 
@@ -22,11 +17,7 @@ const footerColor = {
 }
 
 const Footer = () => (
-<<<<<<< HEAD
   <div className="flex flex-row h-auto pt-8 pb-8 font-mono bg-bark" style={footerColor}>
-=======
-  <div className="flex flex-row h-auto pt-10 pb-10 font-mono bg-bark" style={footerColor}>
->>>>>>> develop
     <div className="hidden w-1/6 md:flex"></div>
     <div className="flex flex-col w-full p-8 font-hairline text-white md:p-0 md:w-4/6">
       <div className="flex flex-col justify-between md:flex-row">
@@ -41,22 +32,16 @@ const Footer = () => (
               Donate today.
             </a>
           </p>
-<<<<<<< HEAD
           <div className="flex">
-            <Button text="Join our newsletter" url="https://treetop-heartwod-dev.netlify.com" isTitle={false}/>
-          </div>
-        </div>
-        <div className="">    
-=======
-          <div>
-            <EmailSignUp />
+            <Button text="Join our newsletter" url={"https://cdn.forms-content.sg-form.com/f99cddf4-b193-11ea-a875-5aa83703c24e"} isTitle={false} />
           </div>
         </div>
         <div className="">
-         
-           
->>>>>>> develop
-              <img className="self-end justify-center w-full h-48 p-10 bg-white lg:h-64 lg:w-64 md:w-48 rounded-xl" src={logo} alt="logo" />
+          <img
+            className="self-end justify-center w-full h-48 p-10 bg-white lg:h-64 lg:w-64 md:w-48 rounded-xl"
+            src={logo}
+            alt="logo"
+          />
         </div>
       </div>
       <hr className="mt-10" />
@@ -74,7 +59,10 @@ const Footer = () => (
           <a className="max-w-md ml-8 duration-100 ease-in-out hover:opacity-75" href="https://facebook.com">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a className="max-w-md ml-8 duration-100 ease-in-out hover:opacity-75" href="https://github.com/Treetop-Learning/cambium">
+          <a
+            className="max-w-md ml-8 duration-100 ease-in-out hover:opacity-75"
+            href="https://github.com/Treetop-Learning/cambium"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>

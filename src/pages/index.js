@@ -50,7 +50,7 @@ const IndexPage = () => {
           <div className="mt-4 w-100 md:w-4/6">
             <LandingCard
               title="Support"
-              reversed="true"
+              reversed={true}
               body="Treetop seeks to educate beyond financial barriers, and support non-traditional students in computer science. Treetop’s remote lessons will give your student the tools they need to succeed in industry or on any path of their choosing."
               src={connection}
             />

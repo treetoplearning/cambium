@@ -5,7 +5,7 @@ import "../css/global.css"
 
 const RegisterButton = ({ text }) => (
   <a href="https://treetop-heartwood-account.netlify.com">
-    <p class="px-8 py-1 rounded-lg text-sm md:text-lg text-white bg-base transition duration-100 ease-in-out hover:bg-green-700 shadow appearance-none leading-tight focus:outline-none focus:shadow-outline">{text}</p>
+    <p className="px-8 py-1 text-sm leading-tight text-white transition duration-100 ease-in-out rounded-lg shadow appearance-none md:text-lg bg-base hover:bg-green-700 focus:outline-none focus:shadow-outline">{text}</p>
   </a>
 
 )
