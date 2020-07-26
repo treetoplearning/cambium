@@ -39,7 +39,7 @@ const IndexPage = () => {
           <div className="mt-16 w-100 md:w-4/6">
             <LandingCard
               title="Creativity"
-              body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing - all absolutely free."
+              body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen - at no cost. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing - all absolutely free."
               src={creativity}
             />
           </div>
@@ -51,7 +51,7 @@ const IndexPage = () => {
             <LandingCard
               title="Support"
               reversed={true}
-              body="Treetop seeks to educate beyond financial barriers, and support non-traditional students in computer science. Treetop’s remote lessons will give your student the tools they need to succeed in industry or on any path of their choosing."
+              body="Treetop seeks to educate beyond financial barriers and support non-traditional students in computer science. Treetop’s remote lessons will give your student the tools they need to succeed in industry or on any path of their choosing."
               src={connection}
             />
           </div>
