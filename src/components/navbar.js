@@ -5,12 +5,14 @@ import { Link } from "gatsby"
 
 import "../css/global.css"
 
+import { getHeartwoodLink } from "../utils/utils"
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => setIsOpen(!isOpen)
   return (
-    <nav className="font-mono bg-transparent">
+    <nav className="font-mono bg-transparent ">
       <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -18,12 +20,7 @@ const Navbar = () => {
               onClick={toggle}
               className="inline-flex items-center justify-center p-2 text-base transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-green-700 focus:outline-none focus:bg-green-700 focus:text-white"
             >
-              <svg
-                className="w-6 h-6"
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 <path
                   className={isOpen ? "hidden" : "inline-flex"}
                   strokeLinecap="round"
@@ -52,9 +49,31 @@ const Navbar = () => {
           <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-end">
             <div className="hidden sm:block sm:ml-6">
               <div className="flex">
-                <Link to="about" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">About</Link>
-                <Link to="blog" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Blog</Link>
-                <Link to="heartwood/register" className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Register</Link>
+                <Link
+                  to="about"
+                  className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
+                >
+                  About
+                </Link>
+                <Link
+                  to="blog"
+                  className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
+                >
+                  Blog
+                </Link>
+                <Link
+                  to="donate"
+                  className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
+                >
+                  Donate
+                </Link>
+                <a
+                  href={getHeartwoodLink()}
+                  className="px-4 py-2 ml-4 text-sm text-base font-medium leading-5 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
+                >
+                  Register
+                </a>
+                
               </div>
             </div>
           </div>
@@ -62,9 +81,31 @@ const Navbar = () => {
       </div>
       <div className={isOpen ? "block" : "hidden"}>
         <div className="px-2 pt-2 pb-3">
-          <Link to="about" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">About</Link>
-          <Link to="blog" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700">Blog</Link>
-          <Link to="heartwood/register" className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-grgreenay-700 focus:outline-none focus:text-white focus:bg-green-700">Register</Link>
+          <Link
+            to="about"
+            className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
+          >
+            About
+          </Link>
+          <Link
+            to="blog"
+            className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
+          >
+            Blog
+          </Link>
+          <Link
+            to="donate"
+            className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
+          >
+            Donate
+          </Link>
+          <a
+            href={getHeartwoodLink()}
+            className="block px-4 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-green-700 focus:outline-none focus:text-white focus:bg-green-700"
+          >
+            Register
+          </a>
+          
         </div>
       </div>
     </nav>

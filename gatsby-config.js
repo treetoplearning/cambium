@@ -24,10 +24,10 @@ module.exports = {
         path: `${__dirname}/src/static`
       }
     },
-    'gatsby-plugin-optimize-svgs',
+    "gatsby-plugin-optimize-svgs",
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-optimize-svgs',
+    "gatsby-plugin-optimize-svgs",
     {
       resolve: `gatsby-plugin-layout`,
       options: {
