@@ -4,7 +4,7 @@ import React from "react"
 import "../css/global.css"
 
 const Description = ({ title, body }) => (
-  <div class="flex flex-col text-white font-mono">
+  <div className="flex flex-col font-mono text-white">
     <p className="ml-6 text-xl font-medium underline sm:text-3xl">{title}</p>
     <p className="text-center text-md sm:text-lg ">{body}</p>
   </div>

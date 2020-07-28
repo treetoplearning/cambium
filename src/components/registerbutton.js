@@ -1,13 +1,13 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import { Link } from "gatsby"
 import "../css/global.css"
 
 const RegisterButton = ({ text }) => (
-  <Link to="register">
-    <p class="mr-10 px-8 mb-0 py-1 rounded-full text-white bg-base">{text}</p>
-  </Link>
+  <a href="https://treetop-heartwood-account.netlify.com">
+    <p className="px-8 py-1 text-sm leading-tight text-white transition duration-100 ease-in-out rounded-lg shadow appearance-none md:text-lg bg-base hover:bg-green-700 focus:outline-none focus:shadow-outline">{text}</p>
+  </a>
+
 )
 
 RegisterButton.propTypes = {

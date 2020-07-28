@@ -75,3 +75,6 @@ yarn-error.log
 # Prettier files
 .prettierignore
 .prettierrc
+
+# Local Netlify folder
+.netlify
