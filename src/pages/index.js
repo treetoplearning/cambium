@@ -1,7 +1,6 @@
 import React from "react"
 import Button from "../components/button"
 import LandingCard from "../components/landingcard"
-import EmailSignUp from "../components/emailsignup"
 
 import wave from "../static/wave.svg"
 import connection from "../static/connection.svg"
@@ -39,7 +38,7 @@ const IndexPage = () => {
           <div className="mt-16 w-100 md:w-4/6">
             <LandingCard
               title="Creativity"
-              body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen - at no cost. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing - all absolutely free."
+              body="With Treetop, your student will have access to a world-class computer science education from the comfort of their computer screen - at no cost. With the help of their own personal instructor, your student will go from fundamentals to a project of their choosing."
               src={creativity}
             />
           </div>
@@ -58,9 +57,6 @@ const IndexPage = () => {
           <div className="hidden w-1/6 md:flex"> </div>
         </div>
         <div className="w-full mt-8"></div>
-      </div>
-      <div className="w-full">
-      <EmailSignUp/>
       </div>
     </div>
   )

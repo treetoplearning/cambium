@@ -35,7 +35,7 @@ const AboutPage = () => (
         <div className="w-full mt-4 md:w-4/6">
           <LandingCard
             title="Availability"
-            body="Your student's undergraduate instructor will work around your student’s busy schedule to find a lesson time that works for everyone. When not in lesson, your student will equipped with the resources to continue their learning and explore their own projects."
+            body="Your student's undergraduate instructor will work around your child's busy schedule to find a lesson time that works for everyone. When not in lesson, your student will be equipped with resources to continue their learning and explore their own projects."
             src={availability}
           />
         </div>
